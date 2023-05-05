@@ -8,12 +8,9 @@ class SplashPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var lecturer = Lecturer('Motasem Aljarah', 'id', 'image');
     var x = 1;
     if (x == 1) {
-      return SelectClass(
-        lecturer: lecturer,
-      );
+      return SelectClass();
     } else {
       return LoginPage();
     }
